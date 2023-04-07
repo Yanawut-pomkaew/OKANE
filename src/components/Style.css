@@ -1,0 +1,93 @@
+.heroSection > img {
+    height : 490px;
+    width : 100%;
+    opacity: 0.3;
+    position : absolute;
+ 
+}
+
+.heroText {
+
+    text-align : center;
+    padding-top : 140px;
+    position: absolute;
+    left : 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.heroText > h1 {
+    color : white;
+    font-weight: 500;
+    width : 900px;
+    font-size : 26px;
+    
+}
+
+.okane {
+    color : #58A4DE;
+    font-weight: 600;
+}
+
+.okane-postfix {
+    color : white;
+    font-weight: 600;
+}
+
+.heroText > h3 {
+    padding-top : 30px;
+}
+
+.st {
+    margin-top : 95px;
+}
+
+.start {
+    margin-top : 70px;
+    background-color : #58A4DE;
+    padding : 15px 35px;
+    color : white;
+    border-radius : 20px;
+    transition: 0.5s ease-in-out;
+    margin-top : 80px;
+    font-weight: 600;
+}
+
+.start:hover {
+    background-color : #075895;
+}
+
+.logo {
+    width : 130px;
+    height : 160px;
+    position:absolute;
+    margin-left : 380px;
+    z-index: -1;
+    margin-top : -6px;
+}
+
+.homeContent-area {
+    margin-top : 600px;
+}
+
+body {
+    width : 100%;
+    overflow: auto;
+}
+
+.blog {
+    color : white;
+    
+    padding : 40px 60px;
+}
+
+.tap > a {
+    margin-right : 60px;
+    
+} 
+
+.tap > a:hover {
+    text-decoration: underline;
+   
+}
+
