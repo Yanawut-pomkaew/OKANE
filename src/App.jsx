@@ -15,6 +15,7 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="/list">
+        <Route path=":userId"element={<List/>} />
         <Route index element={<List/>} />
       </Route>
     </Route>

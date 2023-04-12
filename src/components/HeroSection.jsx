@@ -1,6 +1,7 @@
 import './Style.css';
 import heroImg from '../../public/img/heroSection-img.jpg';
 import logo from '../../public/img/LOGO_CS369.png';
+
 import { Link } from "react-router-dom";
 
 function HeroSection() {
