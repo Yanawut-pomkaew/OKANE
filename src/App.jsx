@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Login from './components/Login';
+import LoginPage from './components/LoginPage';
 import List from './components/List';
 import HeroSection from "./components/HeroSection"
 import HomeContent from "./components/HomeContent"
@@ -11,7 +11,7 @@ const router = createBrowserRouter(
     <Route path="/" >
       <Route index element={<Home/>} />
       <Route path="/login" >
-        <Route index element={<Login/>} />
+        <Route index element={<LoginPage/>} />
       </Route>
 
       <Route path="/list">

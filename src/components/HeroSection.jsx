@@ -18,7 +18,7 @@ function HeroSection() {
                         
                         <div className="button-hero-section"> 
                             <img className="logo" src={logo} />
-                            <Link className="start" to={`/list`}><button className="st">Get Start</button></Link>
+                            <Link className="start" to={`/list/123135634`}><button className="st">Get Start</button></Link>
                         </div>
                         
                     </div>
