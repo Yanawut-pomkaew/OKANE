@@ -8,7 +8,7 @@ function HeroSection() {
     return(
         <div >
                 <div className="heroSection">
-                    <img src={heroImg}/>
+                    <img src={heroImg}/> 
                     <div className="heroText">
                         <h1>OKANE จะช่วยให้คุณสามารถจัดการการออมเงินและวางแผนในการซื้อสินค้าโปรด
                         วางแผนซื้อตั๋วคอนเสิร์ตศิลปินที่คุณชื่นชอบหรือวางแผนเดินทางท่องเที่ยวรอบโลก!

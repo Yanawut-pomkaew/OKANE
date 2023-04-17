@@ -16,8 +16,7 @@ div::-webkit-scrollbar {
     width : 100%;
     opacity: 0.3;
     position : absolute;
-
- 
+    object-fit:cover;
 }
 
 .spinner {
@@ -34,19 +33,18 @@ div::-webkit-scrollbar {
 }
 
 .heroText {
-    
     text-align : center;
-    padding-top : 140px;
+    padding-top : 100px;
     position: absolute;
     left : 50%;
-    top: 50%;
+    top: 30%;
     transform: translate(-50% , -50%);
 }
 
 .heroText > h1 {
     color : white;
+    width: 900px;
     font-weight: 500;
-    width : 900px;
     font-size : 26px;
     
 }
@@ -86,11 +84,11 @@ div::-webkit-scrollbar {
 
 .logo {
     width : 130px;
-    height : 160px;
+    height : 60px;
     position:absolute;
-    margin-left : 380px;
-    z-index: -1;
-    margin-top : -6px;
+    left: 42%;
+    z-index: 2;
+    margin-top : 25px;
 }
 
 .homeContent-area {
@@ -110,8 +108,7 @@ body {
 }
 
 .tap > a {
-    margin-right : 60px;
-    
+    margin-right : 60px; 
 } 
 
 .tap > a:hover {
@@ -151,7 +148,7 @@ body {
     width : 100%;
     margin-top : 150px;
     margin-bottom : 100px;
-
+    background-color: #075895;
 }
 
 .review-card > img { 
@@ -176,10 +173,11 @@ body {
 }
 
 .review-notation {
-    margin-top : 150px;
+    margin-top : 50px;
     text-align: center;
     font-size : 30px;
     color : white;
+    background-color: #075895;
 }
 
 .review-card {
@@ -227,8 +225,6 @@ body {
     width : 300px;
     cursor : pointer;
     transition : 0.5s;
-    
-
 }
 
 .list-card:hover {
@@ -262,7 +258,7 @@ body {
 
 .add-list {
     background-color :#58A4DE;
-    width : fit-content;
+    width : 55px;
     padding : 10px 20px;
     border-radius: 50%;
     height : 55px;
@@ -270,7 +266,7 @@ body {
     transition: 0.5s ease-out;
     margin-top : 100px;
     position : fixed;
-    margin-left: 93%;
+    margin-left: 90%;
     bottom : 0;
     margin-bottom : 20px;
 
@@ -354,4 +350,101 @@ body {
 
 .list-card:hover .delete {
     display : block;
+}
+
+@media screen and (max-width: 1024px) {
+    .lists-area {
+        display  :grid;
+        grid-template-columns:auto auto;
+    }
+    .heroText > h1 {
+        width: 600px;
+        font-size : 18px;
+        font-weight: 400;
+    }
+    .okane {
+        font-weight: 500;
+    }
+    
+    .okane-postfix {
+        font-weight: 500;
+    }
+    .logo {
+        left: 38%;
+    }
+    .reviews-area {
+        column-gap : 10px;
+    }
+    .review-card {
+        margin-left : 10px;
+        margin-right : 10px;
+        padding : 5px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .lists-area {
+        display  :grid;
+        grid-template-columns:auto;
+    }
+    .add-list {
+        margin-left: 80%;
+    }
+    .heroText > h1 {
+        width: 450px;
+        font-size : 15px;
+    }
+    .logo {
+        left: 36%;
+    }
+    .reviews-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-card {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .lists-area {
+        display  :grid;
+        grid-template-columns:auto;
+    }
+    .add-list {
+        margin-left: 77%;
+    }
+    .blog {
+        color : white;
+        padding : 0px 0px;
+    }
+    .tap > a {
+        margin-right : 30px; 
+    } 
+    .list-card {
+        column-gap : 10px;
+        padding : 0px;
+        width : 250px;
+    }
+    .list-card > img {
+        width : 150px;
+        height : 170px;
+    }
+    .heroText > h1 {
+        width: 250px;
+        margin-top: 100px;
+    }
+    .okane {
+        font-weight: 300;
+    }
+    
+    .okane-postfix {
+        font-weight: 300;
+    }
+    .logo {
+        left: 23%;
+    }
+    .review-card {
+        width: 250px;
+    }
 }
