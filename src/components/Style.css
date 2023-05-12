@@ -1,0 +1,675 @@
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+    
+
+}
+
+div::-webkit-scrollbar {
+    display: none;
+}
+
+
+.heroSection > img {
+    height : 500px;
+    width : 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.spinner {
+    width: 100%;
+    height : 100vh;
+    text-align : center;
+    display :flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner:after {
+    opacity : 0.5;
+}
+
+.heroText {
+    text-align : center;
+    padding-top : 0px;
+    left : 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+}
+
+.heroText > h1 {
+    color : white;
+    font-weight: 500;
+    width : 900px;
+    font-size : 26px;
+    
+}
+
+.okane {
+    color : #58A4DE;
+    font-weight: 600;
+}
+
+.okane-postfix {
+    color : white;
+    font-weight: 600;
+}
+
+.heroText > h3 {
+    padding-top : 30px;
+}
+
+.st {
+    margin-top : 95px;
+}
+
+.start {
+    margin-top : 70px;
+    background-color : #58A4DE;
+    padding : 15px 35px;
+    color : white;
+    border-radius : 20px;
+    transition: 0.5s ease-in-out;
+    margin-top : 80px;
+    font-weight: 600;
+}
+
+.start:hover {
+    background-color : #075895;
+}
+
+.logo {
+    width : 90px;
+    height : 60px;
+    position:absolute;
+    left: 45%;
+    z-index: 1;
+    margin-top : 25px;
+}
+
+.homeContent-area {
+    margin-top : 600px;
+    max-width : 100%;
+}
+
+body {
+    width : 100%;
+    overflow: auto;
+}
+
+.blog {
+    color : white;
+
+    padding : 40px 60px;
+}
+
+.tap > a {
+    margin-right : 60px;
+    
+} 
+
+.tap > a:hover {
+    text-decoration: underline;
+   
+}
+
+.function-blog {
+    display : grid;
+   
+}
+
+.function-blog > img {
+    background-color : white;
+    padding : 20px;
+    border-radius : 30px;
+    width : 100px;
+    height : 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left : auto;
+    margin-right : auto;
+    margin-bottom : 20px;
+}
+
+.function-blog > h2 {
+    margin-bottom : 80px;
+}
+
+
+.reviews-area {
+    display : flex;
+    justify-content: center;
+    margin-left : auto;
+    margin-right : auto;
+    column-gap : 30px;
+    width : 100%;
+    margin-top : 150px;
+    margin-bottom : 100px;
+
+}
+
+.review-card > img { 
+    
+    border-radius : 50%;
+    width : 120px;
+    height : 120px;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : -80px;
+}
+
+.review-card > h3 {
+    font-size : 20px;
+    margin-top : 20px;
+    text-align : center;
+}
+
+.review-card > p {
+   margin-top : 20px;
+   font-size : 13px;
+}
+
+.review-notation {
+    margin-top : 150px;
+    text-align: center;
+    font-size : 30px;
+    color : white;
+}
+
+.review-card {
+    margin-left : 20px;
+    margin-right : 20px;
+    padding : 20px;
+    color : white;
+
+    justify-content: center;
+    width : 340px;
+    border : 2px solid white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor : pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    background-color : white;
+    color : black;
+}
+
+.review-card .review-profile{
+    transition: all 1s ;
+}
+
+.review-card:hover .review-profile{
+    transform: rotate(25deg);
+}
+
+.lists-area {
+    display  :grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap : 40px;
+    row-gap : 40px;
+    overflow-x :hidden;
+}
+
+.list-card {
+    border : 1px solid white;
+    column-gap : 20px;
+    border-radius : 8px;
+    padding : 12px;
+    width : 300px;
+    cursor : pointer;
+    transition : 0.5s;
+    
+
+}
+
+.list-card:hover {
+    color : black;
+    border : none;
+    background-color : white;
+} 
+
+.list-card > h2 {
+    font-size : 20px;
+    text-align: center;
+    margin-bottom : 20px;
+}
+
+.list-card > p {
+    line-height : 30px;
+}
+
+.list-card > img {
+    width : 180px;
+    height : 200px;
+   margin-right : auto;
+   margin-left : auto;
+   margin-top : 38px;
+   margin-bottom : 20px;
+}
+
+.leftPrice {
+    color : red;
+}
+
+.add-list {
+    background-color :#58A4DE;
+    width : fit-content;
+    padding : 10px 20px;
+    border-radius: 50%;
+    height : 55px;
+    margin-bottom : 80px;
+    transition: 0.5s ease-out;
+    margin-top : 100px;
+    position : fixed;
+    margin-left: 93%;
+    bottom : 0;
+    margin-bottom : 20px;
+
+}
+
+.add-list:hover {
+    background-color :#117bcd;
+}
+
+.add-list-area {
+    
+    bottom : 0;
+
+    width : fit-content;
+    height : fit-content;
+
+}
+
+.add-list > img {
+    width : 15px;
+    height : 15px;
+    margin-top : 10px;
+}
+
+#listType {
+    background-color: rgb(62, 162, 255);
+    color : rgb(255, 255, 255);
+    padding-right : 20px;
+}
+
+.popup {
+    background-color : white;
+    width : 50%;
+    height : 530px;
+    position: absolute;
+    top : 5%;
+    right : 25%;
+    border-radius :6px;
+    color : black;
+    
+ 
+
+}
+
+.main {
+    background-color : rgba(128, 128, 128, 0.4);
+    height : 100vh;
+    width : 100%;
+    position : absolute;
+    top : 0;
+    margin-left : -60px;
+    overflow: hidden;
+ 
+    
+}
+
+.popup-header {
+    display :flex;
+    justify-content: space-between;
+    padding : 15px 20px;
+    font-size : 20px;
+}
+
+.popup-header > p {
+    cursor : pointer;
+}
+
+.popup-header > p:hover {
+   color :rgb(247, 0, 0);
+}
+
+.popup-content {
+    margin-top : -10px;
+    padding : 20px;
+}
+
+.delete {
+    background-color : rgb(183, 64, 64);
+    padding : 6px 13px;
+    width : fit-content;
+    border-radius : 50%;
+    float : right;
+    cursor : pointer;
+    display : none;
+    z-index : 10;
+}
+
+.delete:hover {
+    background-color : rgb(206, 92, 92);
+}
+
+.list-card:hover .delete {
+    display : block;
+}
+
+.detail-describe {
+    display : flex;
+    color : white;
+    margin-top : 80px;
+    justify-content: center;
+}
+
+.detail-text {
+    padding-top : 30px;
+    margin-left : 30px;
+    line-height: 45px;
+}
+
+.detail-text > h1 {
+    font-size : 30px;
+    
+}
+
+.progress-area {
+ 
+
+    display : flex;
+    column-gap : 10px;
+  
+}
+
+.progress-area > button {
+    background-color : white;
+    padding : 0px 20px;
+    color : black;
+    border-radius : 4px;
+    margin-left : 0;
+    margin-top : 10px;
+    transition : 0.5s ease-in-out;
+}
+
+.input-amount {
+    color : black;
+}
+
+.addMoney {
+    background-color : white;
+    color : black;
+    margin-left : 10px;
+    padding : 0px 15px;
+    border-radius : 4px;
+    transition: 0.2s ease-in-out;
+}
+
+#des {
+    color : rgb(0, 0, 0);
+    width : 400px;
+    height : 50px;
+    resize: none;
+}
+
+.alert-login {
+    color : red;
+} 
+
+#submitUpdateDes {
+    margin-left : 0px;
+    background-color : rgba(252, 249, 97, 0.822);
+    color : rgb(0, 0, 0);
+    padding : 5px 5px;
+    
+}
+
+.addMoney:hover {
+    background-color : black;
+    color : white;
+}
+
+.progress-area > button:hover {
+    background-color : rgba(255, 255, 255, 0.737);
+}
+.stat{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+@media screen and (max-height: 450px) {
+    .heroText {
+        top : 80%;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .heroText {
+        top : 40%;
+    }
+}
+@media screen and (min-height: 1000px) {
+    .heroText {
+        top : 30%;
+    }   
+}
+
+@media screen and (max-width: 1200px) {
+    .lists-area {
+        display  :grid;
+        grid-template-columns:auto auto;
+    }
+    .heroText > h1 {
+        width: 600px;
+        font-size : 18px;
+        font-weight: 400;
+    }
+    .okane {
+        font-weight: 500;
+    }
+    
+    .okane-postfix {
+        font-weight: 500;
+    }
+    .logo {
+        left: 42%;
+    }
+    .reviews-area {
+        column-gap : 10px;
+    }
+    .review-card {
+        margin-left : 10px;
+        margin-right : 10px;
+        padding : 5px;
+    }
+
+   
+}
+
+
+
+@media screen and (max-width: 1025px) {
+    .logo {
+        margin-left : 0px;
+    }
+
+    .review-card {
+        padding : 10px;
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .lists-area {
+        display  :grid;
+        grid-template-columns:auto;
+    }
+    .add-list {
+        margin-left: 80%;
+    }
+    .heroText > h1 {
+        width: 450px;
+        font-size : 15px;
+    }
+    .logo {
+        left: 40%;
+    }
+    .reviews-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-card {
+        margin-bottom: 100px;
+        padding : 10px;
+    }
+
+    .add-list {
+        right : 0;
+        margin-right : 10px;
+     
+    }
+    .detail-describe {
+        display : flex;
+        color : white;
+        margin-top : 0px;
+        justify-content: center;
+    }
+    
+    .detail-text {
+        padding-top : 30px;
+        line-height: 30px;
+        margin-left: 0px;
+    }
+    
+    .detail-text > h1 {
+        font-size : 20px;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 460px) {
+    .lists-area {
+        display  :grid;
+        grid-template-columns:auto;
+    }
+    .add-list {
+        margin-left: 77%;
+    }
+    .blog {
+        color : white;
+        padding : 0px 0px;
+    }
+    .tap {
+        margin-left : 10px;
+    }
+    .tap > a {
+        margin-right : 20px; 
+    } 
+    .list-card {
+        column-gap : 10px;
+        padding : 10px;
+        width : 250px;
+    }
+    .list-card > p {
+        font-size : 8px;
+
+    }
+
+    .list-card > h3 {
+        font-size : 16px;
+    }
+    .list-card > img {
+        width : 150px;
+        height : 170px;
+    }
+    .heroText > h1 {
+        width: 250px;
+        margin-top: 100px;
+    }
+    .okane {
+        font-weight: 300;
+    }
+    
+    .okane-postfix {
+        font-weight: 300;
+    }
+    .logo {
+        left: 30%;
+    }
+    .review-card {
+        width: 250px;
+     
+    }
+
+    .main {
+        width : 130%;
+        overflow-y :hidden;
+    }
+
+    .popup {
+        width : 350px;
+        margin-right : -20px;
+    }
+
+    
+}
+
+@media screen and (max-width : 432px) {
+    .popup {
+        margin-right : -40px;
+       
+    }
+}
+
+@media screen and (max-width : 390px) {
+    .popup {
+        margin-right : -25px;
+        width : 290px;
+       
+      
+    }
+
+    .popup-content {
+        margin-right : auto;
+        margin-left : auto;
+        width : 60%;
+        padding : 4px 4px;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .popup {
+        margin-right : -35px;
+    }
+   
+}
+
+@media screen and (max-width : 335px) {
+    .popup {
+        margin-right : -42px;
+    }
+   
+}
+
+@media screen and (max-width : 320px) {
+    .popup {
+        margin-right : -47px;
+    }
+   
+}
+
+
+
+
+
